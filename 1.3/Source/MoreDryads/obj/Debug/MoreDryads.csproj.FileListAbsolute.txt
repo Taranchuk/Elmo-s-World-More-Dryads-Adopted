@@ -1,0 +1,10 @@
+c:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Elmo's More Dryads\1.3\Assemblies\MoreDryads.dll
+c:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Elmo's More Dryads\1.3\Source\MoreDryads\obj\Debug\MoreDryads.csproj.AssemblyReference.cache
+c:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Elmo's More Dryads\1.3\Source\MoreDryads\obj\Debug\MoreDryads.csproj.CoreCompileInputs.cache
+c:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Elmo's More Dryads\1.3\Source\MoreDryads\obj\Debug\MoreDryads.csproj.CopyComplete
+c:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Elmo's More Dryads\1.3\Source\MoreDryads\obj\Debug\MoreDryads.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Elmo-s-World-More-Dryads\1.3\Assemblies\MoreDryads.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Elmo-s-World-More-Dryads\1.3\Source\MoreDryads\obj\Debug\MoreDryads.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Elmo-s-World-More-Dryads\1.3\Source\MoreDryads\obj\Debug\MoreDryads.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Elmo-s-World-More-Dryads\1.3\Source\MoreDryads\obj\Debug\MoreDryads.csproj.CopyComplete
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Elmo-s-World-More-Dryads\1.3\Source\MoreDryads\obj\Debug\MoreDryads.dll
