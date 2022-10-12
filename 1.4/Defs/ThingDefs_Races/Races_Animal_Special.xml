@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="DryadBase">
+		<defName>EMD_Dryad_Bloomer</defName>
+		<label>bloomer dryad</label>
+		<description>A dryad caste specialized in textile production. Together with its Gauranlen tree, this dryad can generate textiles on an ongoing basis. However, it is slow and ineffective at work or combat.</description>
+		<statBases>
+			<MoveSpeed>3</MoveSpeed>
+			<Flammability>0.7</Flammability>
+			<MeatAmount>4</MeatAmount>
+		</statBases>
+		<uiIconScale>1.25</uiIconScale>
+		<race>
+			<useMeatFrom>Dryad_Basic</useMeatFrom>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<soundWounded>Pawn_Dryad_Woodmaker_Wounded</soundWounded>
+					<soundCall>Pawn_Dryad_Woodmaker_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<tools Inherit="False">
+			<li>
+				<label>front left paw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				<armorPenetration>0.12</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>280</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>front right paw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				<armorPenetration>0.12</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>280</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.9</chanceFactor>
+				<armorPenetration>0.13</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>280</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<armorPenetration>0.06</armorPenetration>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="MoreDryads.CompProperties_ThingCategorySpawner">
+				<thingToSpawn>Cloth</thingToSpawn>
+				<category>Textiles</category>
+				<stuff>Fabric</stuff>
+				<spawnCount>32</spawnCount>
+				<spawnIntervalRange>120000</spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>true</showMessageIfOwned>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<PawnKindDef ParentName="DryadKindBase">
+		<defName>EMD_Dryad_Bloomer</defName>
+		<label>bloomer dryad</label>
+		<race>EMD_Dryad_Bloomer</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dryad_Bloomer/Dryad_Bloomer</texPath>
+					<drawSize>1.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dryad_Berrymaker/Dessicated_DryadBerrymaker</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<ThingDef ParentName="DryadBase">
+		<defName>EMD_Dryad_Chunker</defName>
+		<label>chunker dryad</label>
+		<description>A dryad caste specialized in ore production. Together with its Gauranlen tree, this dryad can generate ore on an ongoing basis. However, it is slow and ineffective at work or combat.</description>
+		<statBases>
+			<MoveSpeed>3</MoveSpeed>
+			<Flammability>0.7</Flammability>
+			<MeatAmount>4</MeatAmount>
+		</statBases>
+		<uiIconScale>1.25</uiIconScale>
+		<race>
+			<useMeatFrom>Dryad_Basic</useMeatFrom>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<soundWounded>Pawn_Dryad_Woodmaker_Wounded</soundWounded>
+					<soundCall>Pawn_Dryad_Woodmaker_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<tools Inherit="False">
+			<li>
+				<label>front left paw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				<armorPenetration>0.12</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>280</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>front right paw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				<armorPenetration>0.12</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>280</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.9</chanceFactor>
+				<armorPenetration>0.13</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>280</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<armorPenetration>0.06</armorPenetration>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="MoreDryads.CompProperties_ThingCategorySpawner">
+				<thingToSpawn>Steel</thingToSpawn>
+				<stuff>Metallic</stuff>
+				<category>ResourcesRaw</category>
+				<spawnCount>32</spawnCount>
+				<spawnIntervalRange>120000</spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>true</showMessageIfOwned>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<PawnKindDef ParentName="DryadKindBase">
+		<defName>EMD_Dryad_Chunker</defName>
+		<label>chunker dryad</label>
+		<race>EMD_Dryad_Chunker</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dryad_Chunker/Dryad_Chunker</texPath>
+					<drawSize>1.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dryad_Berrymaker/Dessicated_DryadBerrymaker</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<ThingDef ParentName="DryadBase">
+		<defName>EMD_Dryad_Boomer</defName>
+		<label>boomer dryad</label>
+		<description>A dryad caste specialized in chemfuel production. Together with its Gauranlen tree, this dryad can generate chemfuel on an ongoing basis. However, it is slow and ineffective at work or combat.</description>
+		<statBases>
+			<MoveSpeed>3</MoveSpeed>
+			<Flammability>0.7</Flammability>
+			<MeatAmount>4</MeatAmount>
+		</statBases>
+		<uiIconScale>1.25</uiIconScale>
+		<race>
+			<useMeatFrom>Dryad_Basic</useMeatFrom>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<soundWounded>Pawn_Dryad_Woodmaker_Wounded</soundWounded>
+					<soundCall>Pawn_Dryad_Woodmaker_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<tools Inherit="False">
+			<li>
+				<label>front left paw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				<armorPenetration>0.12</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>280</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>front right paw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				<armorPenetration>0.12</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>280</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.9</chanceFactor>
+				<armorPenetration>0.13</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>280</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<armorPenetration>0.06</armorPenetration>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_Spawner">
+				<thingToSpawn>Chemfuel</thingToSpawn>
+				<spawnCount>32</spawnCount>
+				<spawnIntervalRange>120000</spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>true</showMessageIfOwned>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<PawnKindDef ParentName="DryadKindBase">
+		<defName>EMD_Dryad_Boomer</defName>
+		<label>boomer dryad</label>
+		<race>EMD_Dryad_Boomer</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dryad_Boomer/Dryad_Boomer</texPath>
+					<drawSize>1.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dryad_Berrymaker/Dessicated_DryadBerrymaker</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<ThingDef ParentName="DryadBase">
+		<defName>EMD_Dryad_Slimer</defName>
+		<label>slimer dryad</label>
+		<description>A dryad caste specialized in filth disposal. Under human influence, it can help keep areas clean.</description>
+		<statBases>
+			<MoveSpeed>3</MoveSpeed>
+			<Flammability>0.7</Flammability>
+			<MeatAmount>4</MeatAmount>
+		</statBases>
+		<uiIconScale>1.25</uiIconScale>
+		<race>
+			<useMeatFrom>Dryad_Basic</useMeatFrom>
+			<thinkTreeMain>EMD_DryadCleaner</thinkTreeMain>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<soundWounded>Pawn_Dryad_Woodmaker_Wounded</soundWounded>
+					<soundCall>Pawn_Dryad_Woodmaker_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<disableAreaControl>false</disableAreaControl>
+		</race>
+		<tools Inherit="False">
+			<li>
+				<label>front left paw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				<armorPenetration>0.12</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>280</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>front right paw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				<armorPenetration>0.12</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>280</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.9</chanceFactor>
+				<armorPenetration>0.13</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>280</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<armorPenetration>0.06</armorPenetration>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<PawnKindDef ParentName="DryadKindBase">
+		<defName>EMD_Dryad_Slimer</defName>
+		<label>slimer dryad</label>
+		<race>EMD_Dryad_Slimer</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dryad_Slimer/Dryad_Slimer</texPath>
+					<drawSize>1.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dryad_Berrymaker/Dessicated_DryadBerrymaker</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+
+	<MVCF.ModDef>
+		<defName>EMD_Dryad_Spitter</defName>
+		<label>EMD_Dryad_Spitter</label>
+		<description>Adding animal ranged attacks for EMD_Dryad_Spitter</description>
+		<ActivateFeatures>
+			<li>RangedAnimals</li>
+		</ActivateFeatures>
+	</MVCF.ModDef>
+
+
+	<ThingDef ParentName="DryadBase">
+		<defName>EMD_Dryad_Spitter</defName>
+		<label>spitter dryad</label>
+		<description>A dryad caste with toxic spit that is specialized in aggression and damage-dealing attacks. Though it can do tremendous damage, it is vulnerable to attacks itself. And very slow compared to its siblings.</description>
+		<statBases>
+			<MoveSpeed>2</MoveSpeed>
+			<Flammability>0.7</Flammability>
+			<MeatAmount>4</MeatAmount>
+		</statBases>
+		<uiIconScale>1.25</uiIconScale>
+		<race>
+			<useMeatFrom>Dryad_Basic</useMeatFrom>
+			<thinkTreeMain>EMD_DryadSpitter</thinkTreeMain>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<soundWounded>Pawn_Dryad_Woodmaker_Wounded</soundWounded>
+					<soundCall>Pawn_Dryad_Woodmaker_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<trainability>Intermediate</trainability>
+			<trainableTags>
+				<li>Basic</li>
+				<li>Combat</li>
+			</trainableTags>
+			<untrainableTags>
+				<li>Work</li>
+				<li>Help</li>
+			</untrainableTags>
+		</race>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>0.40</accuracyTouch>
+				<accuracyShort>0.50</accuracyShort>
+				<accuracyMedium>0.70</accuracyMedium>
+				<accuracyLong>0.70</accuracyLong>
+				<defaultProjectile>EMD_ToxicSpit</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<range>25</range>
+				<commonality>2</commonality>
+			</li>
+		</verbs>
+		<tools Inherit="False">
+			<li>
+				<label>front left paw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				<armorPenetration>0.12</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>280</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>front right paw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				<armorPenetration>0.12</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>280</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.9</chanceFactor>
+				<armorPenetration>0.13</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>280</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<armorPenetration>0.06</armorPenetration>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>EMD_ToxicSpit</defName>
+		<label>toxic spit</label>
+		<graphicData>
+			<texPath>Things/Projectile/ToxicBullet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>EMD_ToxicSpit</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<stoppingPower>2</stoppingPower>
+			<armorPenetrationBase>1</armorPenetrationBase>
+			<speed>50</speed>
+		</projectile>
+	</ThingDef>
+
+	<DamageDef>
+		<defName>EMD_ToxicSpit</defName>
+		<label>toxic spit</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been shot to death.</deathMessage>
+		<hediff>Burn</hediff>
+		<additionalHediffs>
+			<li>
+				<hediff>ToxicBuildup</hediff>
+				<severityPerDamageDealt>0.015</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+		<armorCategory>Sharp</armorCategory>
+		<isRanged>true</isRanged>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+	</DamageDef>
+
+	<PawnKindDef ParentName="DryadKindBase">
+		<defName>EMD_Dryad_Spitter</defName>
+		<label>spitter dryad</label>
+		<race>EMD_Dryad_Spitter</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dryad_Spitter/Dryad_Spitter</texPath>
+					<drawSize>1.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dryad_Berrymaker/Dessicated_DryadBerrymaker</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	
+
+	<ThingDef ParentName="DryadBase">
+		<defName>EMD_Dryad_Treant</defName>
+		<label>treant dryad</label>
+		<description>A dryad caste specialized in being a terrifying force amongst all dryad castes. It is an embodiment of the tree itself in ways. Armed with sharp roots, thick bark, and a paralyzing glare, the Treant is unmatched.</description>
+		<statBases>
+			<MoveSpeed>2</MoveSpeed>
+			<Flammability>0.7</Flammability>
+			<MeatAmount>4</MeatAmount>
+      <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1</ArmorRating_Sharp>
+		</statBases>
+		<uiIconScale>1.25</uiIconScale>
+		<race>
+			<useMeatFrom>Dryad_Basic</useMeatFrom>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<soundWounded>Pawn_Dryad_Woodmaker_Wounded</soundWounded>
+					<soundCall>Pawn_Dryad_Woodmaker_Call</soundCall>
+				</li>
+			</lifeStageAges>
+      <trainability>Intermediate</trainability>
+      <trainableTags>
+        <li>Basic</li>
+        <li>Combat</li>
+      </trainableTags>
+      <untrainableTags>
+        <li>Work</li>
+        <li>Help</li>
+      </untrainableTags>
+      <baseHealthScale>2</baseHealthScale>
+
+		</race>
+		<tools Inherit="False">
+			<li>
+				<label>left root</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				<armorPenetration>1.1</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>320</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right root</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				<armorPenetration>1.1</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>320</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>maw</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.9</chanceFactor>
+				<armorPenetration>0.7</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>280</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15</power>
+				<armorPenetration>0.7</armorPenetration>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<PawnKindDef ParentName="DryadKindBase">
+		<defName>EMD_Dryad_Treant</defName>
+		<label>treant dryad</label>
+		<race>EMD_Dryad_Treant</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dryad_Treant/Dryad_Treant</texPath>
+					<drawSize>3.0</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dryad_Berrymaker/Dessicated_DryadBerrymaker</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	
+</Defs>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GauranlenTreeModeDef>
+    <defName>EMD_Dryad_Bloomer</defName>
+    <label>bloomer</label>
+    <description>A dryad caste specialized in textile production. Together with its Gauranlen tree, this dryad can generate textiles on an ongoing basis. However, it is slow and ineffective at work or combat.</description>
+    <drawPosition>(0.9, 0)</drawPosition>
+    <pawnKindDef>EMD_Dryad_Bloomer</pawnKindDef>
+    <displayedStats>
+      <li>MaxHitPoints</li>
+      <li>MoveSpeed</li>
+    </displayedStats>
+    <hyperlinks>
+      <ThingDef>EMD_Dryad_Bloomer</ThingDef>
+    </hyperlinks>
+  </GauranlenTreeModeDef>
+
+  <GauranlenTreeModeDef>
+    <defName>EMD_Dryad_Chunker</defName>
+    <label>chunker</label>
+    <description>A dryad caste specialized in textile production. Together with its Gauranlen tree, this dryad can generate textiles on an ongoing basis. However, it is slow and ineffective at work or combat.</description>
+    <drawPosition>(0.9, 0.1665)</drawPosition>
+    <pawnKindDef>EMD_Dryad_Chunker</pawnKindDef>
+    <displayedStats>
+      <li>MaxHitPoints</li>
+      <li>MoveSpeed</li>
+    </displayedStats>
+    <hyperlinks>
+      <ThingDef>EMD_Dryad_Chunker</ThingDef>
+    </hyperlinks>
+  </GauranlenTreeModeDef>
+  
+
+  <GauranlenTreeModeDef>
+    <defName>EMD_Dryad_Boomer</defName>
+    <label>boomer</label>
+    <description>A dryad caste specialized in chemfuel production. Together with its Gauranlen tree, this dryad can generate chemfuel on an ongoing basis. However, it is slow and ineffective at work or combat.</description>
+    <drawPosition>(0.9, 0.333)</drawPosition>
+    <pawnKindDef>EMD_Dryad_Boomer</pawnKindDef>
+    <displayedStats>
+      <li>MaxHitPoints</li>
+      <li>MoveSpeed</li>
+    </displayedStats>
+    <hyperlinks>
+      <ThingDef>EMD_Dryad_Boomer</ThingDef>
+    </hyperlinks>
+  </GauranlenTreeModeDef>
+  
+  <GauranlenTreeModeDef>
+    <defName>EMD_Dryad_Slimer</defName>
+    <label>slimer</label>
+    <description>A dryad caste specialized in filth disposal. Under human influence, it can help keep areas clean.</description>
+    <drawPosition>(0.9, 0.5)</drawPosition>
+    <pawnKindDef>EMD_Dryad_Slimer</pawnKindDef>
+    <displayedStats>
+      <li>MaxHitPoints</li>
+      <li>MoveSpeed</li>
+    </displayedStats>
+    <hyperlinks>
+      <ThingDef>EMD_Dryad_Slimer</ThingDef>
+    </hyperlinks>
+  </GauranlenTreeModeDef>
+  
+  <GauranlenTreeModeDef>
+    <defName>EMD_Dryad_Spitter</defName>
+    <label>spitter</label>
+    <description>A dryad caste with toxic spit that is specialized in aggression and damage-dealing attacks. Though it can do tremendous damage, it is vulnerable to attacks itself. And very slow compared to its siblings.</description>
+    <drawPosition>(0.9, 0.665)</drawPosition>
+    <pawnKindDef>EMD_Dryad_Spitter</pawnKindDef>
+    <displayedStats>
+      <li>MaxHitPoints</li>
+      <li>MoveSpeed</li>
+      <li>ArmorRating_Blunt</li>
+      <li>ArmorRating_Sharp</li>
+    </displayedStats>
+    <hyperlinks>
+      <ThingDef>EMD_Dryad_Spitter</ThingDef>
+    </hyperlinks>
+  </GauranlenTreeModeDef>
+  
+  <GauranlenTreeModeDef>
+    <defName>EMD_Dryad_Treant</defName>
+    <label>treant</label>
+    <description>A dryad caste specialized in being a terrifying force amongst all dryad castes. It is an embodiment of the tree itself in ways. Armed with sharp roots, thick bark, and a paralyzing glare, the Treant is unmatched.</description>
+    <drawPosition>(0.9, 0.833)</drawPosition>
+    <pawnKindDef>EMD_Dryad_Treant</pawnKindDef>
+    <displayedStats>
+      <li>MaxHitPoints</li>
+      <li>MoveSpeed</li>
+      <li>ArmorRating_Blunt</li>
+      <li>ArmorRating_Sharp</li>
+    </displayedStats>
+    <hyperlinks>
+      <ThingDef>EMD_Dryad_Treant</ThingDef>
+    </hyperlinks>
+  </GauranlenTreeModeDef>
+</Defs>
